@@ -1,0 +1,5 @@
+YANG, OpenConfig, and gNMI are used for network configuration on ONOS VM 1: 10.3.12.139 to access p4 based mininet topology on ONOS UI.
+$ util/gnmi-cli --grpc-addr 10.3.12.140:50001:50001 get /
+$ util/gnmi-cli --grpc-addr 10.3.12.140:50001:50001 get / | util/oc-pb-decoder | less
+$ util/gnmi-cli --grpc-addr 10.3.12.140:50001 get \/interfaces/interface[name=leaf1-eth3]/config
+$ util/gnmi-cli --grpc-addr 10.3.12.140:50001:50001 \--interval 1000 sub-sample \/interfaces/interface[name=leaf1-eth3]/state/counters/in-unicast-pkts
