@@ -1,3 +1,7 @@
+We recommend that you download the Docker image (~142MB) and use it, but you can also build the image directly with:
+$git clone https://github.com/p4lang/p4runtime-shell
+$cd p4runtime-shell
+$docker build -t p4lang/p4runtime-sh .
 To connect the P4Runtime Shell to leaf1 and push the pipeline configuration obtained before, used the following command:
 $util/p4rt-sh --grpc-addr 10.3.12.139:50001 --config p4src/build/p4info.txt,p4src/build/bmv2.json --election-id 0,1
 When the P4RT shell started, we used the following P4Runtime-sh commands to enable connectivity from VM 2 (IP: 10.3.12.140):
