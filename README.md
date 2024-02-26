@@ -1,9 +1,1 @@
-We build our SDN experimental setup and application development stack by combining free and open-source components. Our main computing resource was a Huawei server equipped with a powerful Intel(R) Xeon(R) Silver 4210 processor, 32 GB RAM and 2TB SAS storage. We installed  VMware ESXi version 7.0 U2 hypervisor in the server to build virtualization infrastructure.
-The main P4-based topology in this tutorial has been accessed remotely through an ONOS controller. For this process, 2 different virtual machines were set up. P4 and Mininet were installed on the first machine, while ONOS was installed on the second virtual machine.
-The Mininet version 2.3.1 and BMv2 components were hosted on VM1 with 16 GB of RAM and 8 vCPUs. The VM2 is given 8 GB of RAM along with 8 vCPUs and is used to install ONOS instance. VM1 is given more memory because Mininet topology with several switches were needed to be run on it.
-The P4 program is compiled for the BMv2 simple_switch target using the command $make p4-build. For this, an open source P4_16 compiler (p4c) is used.
-Leaf 1 is programmed using P4Runtime Shell, an interactive Python CLI that can be used to connect to a P4Runtime server and can run P4Runtime commands. For example, it can be used to create, read, update, and delete flow table entries. 
-Finally, when connecting to a P4Runtime server, a mastership election ID is provided to write state, such as the pipeline config and table entries.
-In our case, the ONOS VM had specific IP 10.3.12.139 however the P4 and Mininet contained IP 10.3.12.140.
-When the P4RT shell started, we used the following P4Runtime-sh commands to enable connectivity from VM 2 (IP: 10.3.12.140).
-To activate an emulated network of stratum_bmv2 switches, the topology is started on mininet. Some NDP static entries are done to check the ping connectivity between p4/mininet and ONOS controller.
+
