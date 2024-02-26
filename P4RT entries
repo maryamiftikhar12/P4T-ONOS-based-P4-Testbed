@@ -1,0 +1,9 @@
+When the P4RT shell started, we used the following P4Runtime-sh commands to enable connectivity from VM 2 (IP: 10.3.12.140):
+te = table_entry['IngressPipeImpl.l2_exact_table'](action='IngressPipeImpl.set_egress_port')
+te.match['hdr.ethernet.dst_addr'] = '00:00:00:00:00:1A'
+te.action['port_num'] = '3'
+te.insert()
+te = table_entry['IngressPipeImpl.l2_exact_table'](action='IngressPipeImpl.set_egress_port')
+te.match['hdr.ethernet.dst_addr'] = '00:00:00:00:00:1B'
+te.action['port_num'] = '4'
+te.insert()
