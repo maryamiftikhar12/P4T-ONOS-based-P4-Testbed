@@ -35,18 +35,17 @@ The following components are required for manual Docker installation:
 * Wireshark (optional)
 
 We build our SDN experimental setup and application development stack by combining free and
-open-source components. Our main computing resource was a Huawei server outfitted with a
-powerful Xeon processor. We used 32 GB of RAM at our disposal to execute memory-intensive
-operations and allocated to two virtual machines (VMs) developed for our testing. The Mininet
-and BMv2 components were hosted in a single VM1 with 16 GB of RAM. The VM2 was given 10 GB of 
-RAM and was used to install ONOS instances. The server included SAS storage with a 2TB storage 
-capacity for data storage. We also assigned a 200 GB virtual hard disk drive (VHDD) for specialized
-storage and virtualization requirements. To develop and administer our network emulations, we used 
-Mininet version 2.3.1. The Linux distribution we used was Ubuntu 20.04.5. As our major computing 
-resource, we used an Intel(R) Xeon(R) Silver 4210 CPU, equipping the system with 6 virtual CPUs 
-(vCPUs) to efficiently spread processing workloads.Our virtualization infrastructure was built 
-on VMware ESXi version 7.0 U2, a solid platform that provided us with advanced virtualization 
-capabilities, boosting the efficiency of our tests even further. This extensive experimental 
+open-source components. Our main computing resource was a Huawei server outfitted with a powerful
+Xeon processor. We used 32 GB of RAM at our disposal to execute memory-intensive operations and 
+allocated to two virtual machines (VMs) developed for our testing. The Mininet and BMv2 components 
+were hosted in a single VM1 with 16 GB of RAM. The VM2 was given 10 GB of RAM and was used to install 
+ONOS instances. The server included SAS storage with a 2TB storage capacity for data storage. We also
+assigned a 200 GB virtual hard disk drive (VHDD) for specialized storage and virtualization requirements. 
+To develop and administer our network emulations, we used Mininet version 2.3.1. The Linux distribution 
+we used was Ubuntu 20.04.5. As our major computing resource, we used an Intel(R) Xeon(R) Silver 4210 CPU, 
+equipping the system with 6 virtual CPUs (vCPUs) to efficiently spread processing workloads. Our virtualization 
+infrastructure was built on VMware ESXi version 7.0 U2, a solid platform that provided us with advanced 
+virtualization capabilities, boosting the efficiency of our tests even further. This extensive experimental 
 setup gave us the computational capacity and resources we needed to conduct our research efficiently.
 
 ## Get this repo or pull latest changes
