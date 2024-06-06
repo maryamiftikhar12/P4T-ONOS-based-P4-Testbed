@@ -1,4 +1,4 @@
-To develop P4T, NGSDN tutorial is used as a reference. We followed some of its exercises, 
+To develop P4T, NGSDN tutorial (https://github.com/opennetworkinglab/ngsdn-tutorial/) is used as a reference. We followed some of its exercises, 
 and then implemented our own topology. Additionally, we made some changes in the gNMI CLI 
 to remotely access the ONOS controller. This testbed leverages the power of P4-based BMv2
 switches and Mininet and provides a comprehensive but simplified platform to simulate 
