@@ -55,18 +55,6 @@ following command:
     cd ~/ngsdn-tutorial
     make deps
 
-## Repo structure
-
-This repo is structured as follows:
-
- * `p4src/` P4 implementation
- * `yang/` Yang model used in exercise 2
- * `app/` custom ONOS app Java implementation
- * `mininet/` Mininet script to emulate a 2x2 leaf-spine fabric topology of
-   `stratum_bmv2` devices
- * `util/` Utility scripts
- * `ptf/` P4 data plane unit tests based on Packet Test Framework (PTF)
-
 ## Tutorial commands
 
 To facilitate working on the exercises, A set of make-based commands are provided
@@ -91,7 +79,7 @@ the exercises, here's a quick reference:
 
 ## Exercises
 
-Click on the exercise name to see the instructions:
+Click on the following exercis to see the instructions:
 
  1. [P4Runtime basics](./EXERCISE-1.md)
  2. [Yang, OpenConfig, and gNMI basics](./EXERCISE-2.md)
