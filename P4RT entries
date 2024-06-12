@@ -5,11 +5,15 @@ $docker build -t p4lang/p4runtime-sh .
 To connect the P4Runtime Shell to leaf1 and push the pipeline configuration obtained before, used the following command:
 $util/p4rt-sh --grpc-addr 10.3.12.139:50001 --config p4src/build/p4info.txt,p4src/build/bmv2.json --election-id 0,1
 When the P4RT shell started, we used the following P4Runtime-sh commands to enable connectivity from VM 2 (IP: 10.3.12.140):
-te = table_entry['IngressPipeImpl.l2_exact_table'](action='IngressPipeImpl.set_egress_port')
-te.match['hdr.ethernet.dst_addr'] = '00:00:00:00:00:1A'
-te.action['port_num'] = '3'
-te.insert()
-te = table_entry['IngressPipeImpl.l2_exact_table'](action='IngressPipeImpl.set_egress_port')
-te.match['hdr.ethernet.dst_addr'] = '00:00:00:00:00:1B'
-te.action['port_num'] = '4'
-te.insert()
+
+# Insert table entry for h1
+    te = s1.TableEntry('IngressPipeImpl.l2_exact_table')(action='IngressPipeImpl.set_egress_port')
+    te.match['hdr.ethernet.dst_addr'] = '00:00:00:00:00:1A'
+    te.action['port_num'] = '1'
+    te.insert()
+
+    # Insert table entry for h2
+    te = s1.TableEntry('IngressPipeImpl.l2_exact_table')(action='IngressPipeImpl.set_egress_port')
+    te.match['hdr.ethernet.dst_addr'] = '00:00:00:00:00:1B'
+    te.action['port_num'] = '2'
+    te.insert()
