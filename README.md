@@ -9,19 +9,6 @@ SDN-based network topology.
 * The Stratum switch OS
 * The ONOS SDN controller
 
-The sessions of NGSDN tutorial are organized into a series of practical, hands-on exercises 
-that demonstrate how to build a leaf-spine data center fabric based on IPv4, using P4, Stratum, 
-and ONOS. These exercises are intended for those with an intermediate understanding of the 
-P4 language and a basic knowledge of Java and Python. The exercises will cover key concepts 
-such as:
-
-* Utilizing Stratum APIs (P4Runtime, gNMI, OpenConfig, gNOI)
-* Integrating ONOS with devices programmed with custom P4 programs
-* Developing ONOS applications to implement complex control plane logic
-  (bridging, routing, ECMP, etc.)
-* Testing with bmv2 in Mininet
-* Conducting PTF-based P4 unit tests
-
 ## System requirements
 
 1. Download a pre-packaged VM with all included; **OR**
